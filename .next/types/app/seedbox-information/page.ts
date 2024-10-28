@@ -1,4 +1,4 @@
-// File: X:\websites\drabspirit.github.io\src\app\seedbox-information\page.tsx
+// File: X:\websites\torbox\src\app\seedbox-information\page.tsx
 import * as entry from '../../../../src/app/seedbox-information/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

@@ -36,10 +36,10 @@ const features = [
 
 export function Features() {
   return (
-    <div id="features" className="py-24 bg-gray-800/50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div id="features" className="py-24 bg-gray-800/50 z-[-1}">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-[-1}">
         <div className="text-center">
-          <h2 className="text-3xl font-share-tech glow-effect mb-4">Why Choose TorBox?</h2>
+          <h2 className="text-3xl font-inter glow-effect mb-4">Why Choose TorBox?</h2>
           <p className="text-xl text-gray-400">
             Unlock Fast, Private, and Secure Torrenting with Our Seedbox Services
           </p>
@@ -54,7 +54,7 @@ export function Features() {
                 className="h-12 w-12 text-primary mb-4" 
                 style={{ filter: 'drop-shadow(0 0 8px rgba(4, 191, 138, 0.3))' }}
               />
-              <h3 className="text-xl font-share-tech mb-2">{feature.title}</h3>
+              <h3 className="text-xl font-inter mb-2">{feature.title}</h3>
               <p className="text-gray-400">{feature.description}</p>
             </div>
           ))}

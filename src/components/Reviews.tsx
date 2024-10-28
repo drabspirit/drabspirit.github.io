@@ -79,10 +79,10 @@ export function Reviews() {
   ];
 
   return (
-    <section id="reviews" className="relative py-20 px-4 section-gradient">
+    <section id="reviews" className="relative py-20 px-4 section-gradient z-[-1}">
       <div className="relative max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-share-tech glow-effect mb-4">
+          <h2 className="text-3xl md:text-4xl font-inter glow-effect mb-4">
             Trusted by Users Worldwide
           </h2>
           <a 
@@ -120,7 +120,7 @@ export function Reviews() {
               </p>
               <div className="flex justify-between items-center mt-auto">
                 <div>
-                  <p className="font-share-tech text-[#04bf8a]">{review.author}</p>
+                  <p className="font-inter text-[#04bf8a]">{review.author}</p>
                   <div className="flex items-center gap-2 mt-1">
                     <CountryFlag countryCode={review.location} />
                     <span className="text-sm text-gray-500">{review.location}</span>

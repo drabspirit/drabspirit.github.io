@@ -16,14 +16,14 @@ const Logo = () => (
         </g>
       </svg>
     </div>
-    <span className="text-2xl font-share-tech">TORBOX</span>
+    <span className="text-2xl font-inter">TorBox</span>
   </div>
 );
 
 export function Footer() {
   return (
     <footer className="bg-gray-800/50 border-t border-gray-800">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 z-[-1}">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <Logo />
@@ -32,7 +32,7 @@ export function Footer() {
             </p>
           </div>
           <div>
-            <h3 className="font-share-tech mb-4">Quick Links</h3>
+            <h3 className="font-inter mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li><Link href="#features" className="text-gray-400 hover:text-white transition">Features</Link></li>
               <li><Link href="#faq" className="text-gray-400 hover:text-white transition">FAQ</Link></li>
@@ -40,7 +40,7 @@ export function Footer() {
             </ul>
           </div>
           <div>
-            <h3 className="font-share-tech mb-4">Resources</h3>
+            <h3 className="font-inter mb-4">Resources</h3>
             <ul className="space-y-2">
               <li><Link href="https://support.torbox.app/en/" className="text-gray-400 hover:text-white transition">Support Center</Link></li>
               <li><Link href="https://status.torbox.app" className="text-gray-400 hover:text-white transition">Status</Link></li>
@@ -52,7 +52,7 @@ export function Footer() {
             </ul>
           </div>
           <div>
-            <h3 className="font-share-tech mb-4">Developers</h3>
+            <h3 className="font-inter mb-4">Developers</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="https://www.postman.com/wamy-dev/torbox/collection/6km0yx3/search-api" className="text-gray-400 hover:text-white transition flex items-center gap-1">

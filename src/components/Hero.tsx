@@ -5,11 +5,11 @@ import { Shield, Zap } from 'lucide-react';
 
 export function Hero() {
   return (
-    <div className="relative min-h-[calc(100vh-4rem)] flex items-center justify-center pt-16 pb-24">
+    <div className="relative min-h-[calc(100vh-4rem)] flex items-center justify-center pt-16 pb-24 z-[1]">
       <div className="fixed inset-0 tech-pattern opacity-20 pointer-events-none"></div>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full z-[-1}">
         <div className="text-center">
-          <h1 className="animated-title text-4xl sm:text-5xl md:text-6xl font-share-tech tracking-tight leading-tight mb-8">
+          <h1 className="animated-title text-4xl sm:text-5xl md:text-6xl font-inter tracking-tight leading-tight mb-8">
             <style jsx>{`
               .animated-title {
                 color: #04bf8a;

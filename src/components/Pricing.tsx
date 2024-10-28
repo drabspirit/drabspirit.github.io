@@ -84,10 +84,10 @@ const plans = [
 
 export function Pricing() {
   return (
-    <section id="plans" className="py-24 px-4">
+    <section id="plans" className="py-24 px-4 z-[-1}">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-share-tech glow-effect mb-4">
+          <h2 className="text-3xl md:text-4xl font-inter glow-effect mb-4">
             Choose Your Plan
           </h2>
           <p className="text-gray-400 text-lg">
@@ -111,7 +111,7 @@ export function Pricing() {
               )}
               
               <div className="text-center mb-6">
-                <h3 className="text-xl font-share-tech mb-2">{plan.name}</h3>
+                <h3 className="text-xl font-inter mb-2">{plan.name}</h3>
                 <div className="text-3xl font-bold mb-2">
                   ${plan.price}<span className="text-lg text-gray-400">/mo</span>
                 </div>

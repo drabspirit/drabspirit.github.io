@@ -8,8 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'share-tech': ['"Share Tech Mono"', 'monospace'],
-        'usual': ['usual', 'sans-serif'],
+        'inter': ['Inter', 'sans-serif'], 
       },
       colors: {
         border: 'hsl(var(--border))',

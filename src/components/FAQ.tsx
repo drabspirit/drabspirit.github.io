@@ -57,7 +57,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
         className="w-full px-6 py-4 flex justify-between items-center text-left hover:bg-[#0d0f13]/80 transition-colors"
         onClick={onClick}
       >
-        <h3 className="text-xl font-share-tech">{question}</h3>
+        <h3 className="text-xl font-inter">{question}</h3>
         <ChevronDown
           className={cn(
             "w-5 h-5 text-[#04bf8a] transition-transform duration-300",
@@ -85,9 +85,9 @@ export function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section id="faq" className="relative py-24">
+    <section id="faq" className="relative py-24 z-[-1}">
       <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-share-tech text-center mb-12 glow-effect">
+        <h2 className="text-3xl font-inter text-center mb-12 glow-effect">
           Frequently Asked Questions
         </h2>
         <div className="space-y-4">
