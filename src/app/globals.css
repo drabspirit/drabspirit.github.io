@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 142.4 71.8% 29.2%;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+  }
+  
+  body {
+    @apply bg-[#12141b] text-white font-usual;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-share-tech;
+  }
+}
+
+@layer components {
+  .animated-title {
+    @apply text-primary;
+    animation: glow 6s ease-in-out infinite;
+  }
+
+  .card-hover-glow {
+    @apply transition-all duration-500;
+  }
+
+  .card-hover-glow:hover {
+    @apply shadow-[0_0_20px_rgba(4,191,138,0.2)] -translate-y-0.5;
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    text-shadow: 
+      0 0 20px rgba(4, 191, 138, 0.3),
+      0 0 40px rgba(4, 191, 138, 0.2),
+      0 0 60px rgba(4, 191, 138, 0.1);
+    transform: translateY(0);
+  }
+  50% {
+    text-shadow: 
+      0 0 30px rgba(4, 191, 138, 0.4),
+      0 0 60px rgba(4, 191, 138, 0.3),
+      0 0 80px rgba(4, 191, 138, 0.2);
+    transform: translateY(-2px);
+  }
+}
+
+.tech-pattern {
+  background-image: 
+    radial-gradient(circle at center, rgba(4, 191, 138, 0.15) 2px, transparent 2px),
+    radial-gradient(circle at center, rgba(4, 191, 138, 0.1) 2px, transparent 2px);
+  background-size: 40px 40px, 80px 80px;
+  background-position: -19px -19px, -39px -39px;
+  animation: patternPulse 3s ease-in-out infinite;
+  pointer-events: none
+}
+
+@keyframes patternPulse {
+  0%, 100% {
+    background-image: 
+      radial-gradient(circle at center, rgba(4, 191, 138, 0.15) 2px, transparent 2px),
+      radial-gradient(circle at center, rgba(4, 191, 138, 0.1) 2px, transparent 2px);
+  }
+  50% {
+    background-image: 
+      radial-gradient(circle at center, rgba(4, 191, 138, 0.2) 2.5px, transparent 2.5px),
+      radial-gradient(circle at center, rgba(4, 191, 138, 0.15) 2.5px, transparent 2.5px);
+  }
+}
