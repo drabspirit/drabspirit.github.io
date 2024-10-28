@@ -1,11 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 
-  output: "export",
+ // output: "export",
 
-  basePath: "/drabspirit.github.io",
-  assetPrefix: '/drabspirit.github.io/',
-  
+ // basePath: "/drabspirit.github.io",
+ // assetPrefix: '/drabspirit.github.io/',
   images: {
     unoptimized: true,
   },

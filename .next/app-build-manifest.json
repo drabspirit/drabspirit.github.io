@@ -1,52 +1,52 @@
 {
   "pages": {
     "/_not-found": [
-      "static/chunks/webpack-c8e9f7acbe809263.js",
+      "static/chunks/webpack-7c84e49d25c0c1f6.js",
       "static/chunks/fd9d1056-da58663ea58a581a.js",
-      "static/chunks/69-ef8a26d5eda64d86.js",
+      "static/chunks/69-e86a3afa74b9a4db.js",
       "static/chunks/main-app-4108c0c9e58a6472.js",
       "static/chunks/app/_not-found-9d50ab56e34b1dc0.js"
     ],
     "/layout": [
-      "static/chunks/webpack-c8e9f7acbe809263.js",
+      "static/chunks/webpack-7c84e49d25c0c1f6.js",
       "static/chunks/fd9d1056-da58663ea58a581a.js",
-      "static/chunks/69-ef8a26d5eda64d86.js",
+      "static/chunks/69-e86a3afa74b9a4db.js",
       "static/chunks/main-app-4108c0c9e58a6472.js",
-      "static/chunks/807-649e0ac398040703.js",
+      "static/chunks/807-9533886890e991f8.js",
       "static/css/062620e75036fe4f.css",
       "static/chunks/app/layout-29af0b37be3a55aa.js"
     ],
     "/page": [
-      "static/chunks/webpack-c8e9f7acbe809263.js",
+      "static/chunks/webpack-7c84e49d25c0c1f6.js",
       "static/chunks/fd9d1056-da58663ea58a581a.js",
-      "static/chunks/69-ef8a26d5eda64d86.js",
+      "static/chunks/69-e86a3afa74b9a4db.js",
       "static/chunks/main-app-4108c0c9e58a6472.js",
       "static/chunks/f4898fe8-e7ba43f10465624b.js",
-      "static/chunks/807-649e0ac398040703.js",
+      "static/chunks/807-9533886890e991f8.js",
       "static/chunks/52-15dbe6c67cea4f73.js",
       "static/chunks/331-07c8f7e52b407698.js",
       "static/chunks/app/page-718bddbc76555c39.js"
     ],
-    "/torrent-downloader/page": [
-      "static/chunks/webpack-c8e9f7acbe809263.js",
-      "static/chunks/fd9d1056-da58663ea58a581a.js",
-      "static/chunks/69-ef8a26d5eda64d86.js",
-      "static/chunks/main-app-4108c0c9e58a6472.js",
-      "static/chunks/807-649e0ac398040703.js",
-      "static/chunks/331-07c8f7e52b407698.js",
-      "static/chunks/app/torrent-downloader/page-449a9059fab778df.js"
-    ],
     "/seedbox-information/page": [
-      "static/chunks/webpack-c8e9f7acbe809263.js",
+      "static/chunks/webpack-7c84e49d25c0c1f6.js",
       "static/chunks/fd9d1056-da58663ea58a581a.js",
-      "static/chunks/69-ef8a26d5eda64d86.js",
+      "static/chunks/69-e86a3afa74b9a4db.js",
       "static/chunks/main-app-4108c0c9e58a6472.js",
       "static/chunks/app/seedbox-information/page-75f2ed2e475e3157.js"
     ],
-    "/torrent-faq/page": [
-      "static/chunks/webpack-c8e9f7acbe809263.js",
+    "/torrent-downloader/page": [
+      "static/chunks/webpack-7c84e49d25c0c1f6.js",
       "static/chunks/fd9d1056-da58663ea58a581a.js",
-      "static/chunks/69-ef8a26d5eda64d86.js",
+      "static/chunks/69-e86a3afa74b9a4db.js",
+      "static/chunks/main-app-4108c0c9e58a6472.js",
+      "static/chunks/807-9533886890e991f8.js",
+      "static/chunks/331-07c8f7e52b407698.js",
+      "static/chunks/app/torrent-downloader/page-449a9059fab778df.js"
+    ],
+    "/torrent-faq/page": [
+      "static/chunks/webpack-7c84e49d25c0c1f6.js",
+      "static/chunks/fd9d1056-da58663ea58a581a.js",
+      "static/chunks/69-e86a3afa74b9a4db.js",
       "static/chunks/main-app-4108c0c9e58a6472.js",
       "static/chunks/52-15dbe6c67cea4f73.js",
       "static/chunks/app/torrent-faq/page-25f79ad51096fa7c.js"
