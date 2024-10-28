@@ -1,12 +1,7 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+// next.config.mjs
 
-//  output: "export",
-
-//  basePath: "/torrent-downloader",
-  images: {
-    unoptimized: true,
-  },
+export default {
+  output: 'export',
+  basePath: '/drabspirit.github.io', // Replace 'repository-name' with your GitHub repository name
+  assetPrefix: '/drabspirit.github.io/', // Same as the basePath
 };
-
-export default nextConfig;
