@@ -1,7 +1,14 @@
-// next.config.mjs
+/** @type {import('next').NextConfig} */
+const nextConfig = {
 
-export default {
-  output: 'export',
-  basePath: '/drabspirit.github.io', // Replace 'repository-name' with your GitHub repository name
-  assetPrefix: '/drabspirit.github.io/', // Same as the basePath
+  output: "export",
+
+  basePath: "/drabspirit.github.io",
+  assetPrefix: '/drabspirit.github.io/',
+  
+  images: {
+    unoptimized: true,
+  },
 };
+
+export default nextConfig;
