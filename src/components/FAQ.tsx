@@ -35,9 +35,6 @@ const faqs = [
   }
 ];
 
-
-
-
 interface AccordionItemProps {
   question: string;
   answer: string;
@@ -54,10 +51,10 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
   return (
     <div className="bg-[#0d0f13] rounded-lg border border-[#04bf8a]/10 transition-all duration-300 card-hover-glow overflow-hidden">
       <button
-        className="w-full px-6 py-4 flex justify-between items-center text-left hover:bg-[#0d0f13]/80 transition-colors"
+        className="w-full px-6 py-4 flex justify-between items-center text-left hover:bg-[#0d0f13]/80 transition-colors focus:outline-none focus-visible:outline-none focus:ring-0"
         onClick={onClick}
       >
-        <h3 className="text-xl font-inter">{question}</h3>
+        <h3 className="text-lg sm:text-xl font-inter">{question}</h3>
         <ChevronDown
           className={cn(
             "w-5 h-5 text-[#04bf8a] transition-transform duration-300",
@@ -85,7 +82,7 @@ export function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section id="faq" className="relative py-24 z-[-1}">
+    <section id="faq" className="relative py-24">
       <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-inter text-center mb-12 glow-effect">
           Frequently Asked Questions

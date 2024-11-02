@@ -80,7 +80,7 @@ export function Reviews() {
 
   return (
     <section id="reviews" className="relative py-20 px-4 section-gradient z-[-1}">
-      <div className="relative max-w-7xl mx-auto">
+      <div className="relative max-w-7xl mx-auto z-[-1}">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-inter glow-effect mb-4">
             Trusted by Users Worldwide
