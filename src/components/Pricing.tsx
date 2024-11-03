@@ -84,13 +84,13 @@ const plans = [
 
 export function Pricing() {
   return (
-    <section id="plans" className="py-24 px-4 z-[-1}">
+    <section id="plans" className="py-24 px-4 bg-[hsl(var(--background))] z-[-1}">
       <div className="max-w-7xl mx-auto z-[-1}">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-inter glow-effect mb-4">
+          <h2 className="text-3xl md:text-4xl font-inter text-[hsl(var(--foreground))] glow-effect mb-4">
             Choose Your Plan
           </h2>
-          <p className="text-gray-400 text-lg">
+          <p className="text-[hsl(var(--muted-foreground))] text-lg">
             Select the perfect plan for your downloading needs
           </p>
         </div>
@@ -100,33 +100,33 @@ export function Pricing() {
             <div
               key={plan.name}
               className={cn(
-                "relative p-6 rounded-lg bg-[#0d0f13] border",
-                plan.popular ? 'border-primary shadow-primary/20 shadow-lg' : 'border-gray-800'
+                "relative p-6 rounded-lg bg-[hsl(var(--card))] border shadow-lg transition-all duration-300 transform hover:scale-105",
+                plan.popular ? 'border-[hsl(var(--highlight))] shadow-[hsl(var(--highlight))]/20' : 'border-[hsl(var(--border))]'
               )}
             >
               {plan.popular && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-white px-4 py-1 rounded-full text-sm">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[hsl(var(--highlight))] text-[hsl(var(--card-foreground))] px-4 py-1 rounded-full text-sm font-semibold">
                   Popular
                 </div>
               )}
               
               <div className="text-center mb-6">
-                <h3 className="text-xl font-inter mb-2">{plan.name}</h3>
-                <div className="text-3xl font-bold mb-2">
-                  ${plan.price}<span className="text-lg text-gray-400">/mo</span>
+                <h3 className="text-xl font-inter text-[hsl(var(--highlight))] mb-2">{plan.name}</h3>
+                <div className="text-3xl font-bold text-[hsl(var(--background))] mb-2">
+                  ${plan.price}<span className="text-lg text-[hsl(var(--ring))]">/mo</span>
                 </div>
-                <p className="text-gray-400">{plan.description}</p>
+                <p className="text-[hsl(var(--muted-foreground))]">{plan.description}</p>
               </div>
 
               <ul className="space-y-3 mb-8 flex-grow">
                 {plan.features.map((feature, index) => (
                   <li key={index} className="flex items-start gap-2">
                     {feature.included ? (
-                      <Check className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <Check className="h-5 w-5 text-[hsl(var(--highlight))] shrink-0 mt-0.5" />
                     ) : (
                       <X className="h-5 w-5 text-red-500 shrink-0 mt-0.5" />
                     )}
-                    <span className={feature.included ? 'text-gray-300' : 'text-gray-500 line-through'}>
+                    <span className={feature.included ? 'text-[hsl(var(--background))]' : 'text-[hsl(var(--muted-foreground))] line-through'}>
                       {feature.text}
                     </span>
                   </li>
@@ -136,10 +136,10 @@ export function Pricing() {
               <Link
                 href={plan.ctaLink}
                 className={cn(
-                  "block w-full py-3 px-6 rounded-lg text-center transition-all text-lg font-medium",
+                  "block w-full py-3 px-6 rounded-lg text-center transition-all text-lg font-medium shadow-md",
                   plan.popular
-                    ? 'bg-primary hover:bg-primary/90 text-white'
-                    : 'bg-gray-800 hover:bg-gray-700 text-white'
+                    ? 'bg-[hsl(var(--highlight))] hover:bg-[hsl(var(--highlight))]/90 text-[hsl(var(--card-foreground))]'
+                    : 'bg-[hsl(var(--border))] hover:bg-[hsl(var(--muted))] text-[hsl(var(--foreground))]'
                 )}
               >
                 {plan.cta}

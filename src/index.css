@@ -2,42 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-.tech-pattern {
-  background-image: 
-    radial-gradient(circle at center, rgba(4, 191, 138, 0.15) 2px, transparent 2px),
-    radial-gradient(circle at center, rgba(4, 191, 138, 0.1) 2px, transparent 2px);
-  background-size: 40px 40px, 80px 80px;
-  background-position: -19px -19px, -39px -39px;
-  animation: patternPulse 3s ease-in-out infinite;
-  will-change: background-image;
-  pointer-events: none;
-  z-index: -1;
-}
-
-@keyframes patternPulse {
-  0%, 100% {
-    background-image: 
-      radial-gradient(circle at center, rgba(4, 191, 138, 0.15) 2px, transparent 2px),
-      radial-gradient(circle at center, rgba(4, 191, 138, 0.1) 2px, transparent 2px);
-  }
-  50% {
-    background-image: 
-      radial-gradient(circle at center, rgba(4, 191, 138, 0.2) 2.5px, transparent 2.5px),
-      radial-gradient(circle at center, rgba(4, 191, 138, 0.15) 2.5px, transparent 2.5px);
-  }
-}
-
+/* Card Hover Glow Effect */
 .card-hover-glow:hover {
-  box-shadow: 0 0 20px rgba(4, 191, 138, 0.2);
-  z-index: -1;
+  box-shadow: 0 0 20px rgba(var(--ring-rgba), 0.2);
+  z-index: 5; /* Ensure it appears above the background pattern */
 }
 
+/* Glow Effect for Titles */
 .glow-effect {
-  text-shadow: 0 0 10px rgba(4, 191, 138, 0.3);
-  z-index: -1;
+  color: hsl(var(--foreground)); /* Ensures compatibility with your theme */
+  text-shadow: 0 0 10px rgba(var(--ring-rgba), 0.3);
 }
 
+/* Section Gradient */
 .section-gradient {
   background: linear-gradient(180deg, rgba(17, 24, 39, 0) 0%, rgba(17, 24, 39, 0.5) 100%);
-  z-index: -1;
+  z-index: -5; /* Layering it below content but above the background pattern */
 }

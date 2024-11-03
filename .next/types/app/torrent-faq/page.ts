@@ -1,4 +1,4 @@
-// File: X:\websites\torbox\src\app\torrent-faq\page.tsx
+// File: X:\websites\stackblitz\src\app\torrent-faq\page.tsx
 import * as entry from '../../../../src/app/torrent-faq/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

@@ -57,7 +57,6 @@ export function CursorTrail() {
       const dy = mouseRef.current.y - prevMouseRef.current.y;
       const speed = Math.sqrt(dx * dx + dy * dy) * 0.05; 
 
-      // Limit particle creation rate
       if (speed > 0.3 && particlesRef.current.length < maxParticles) {
         particlesRef.current.push(
           createParticle(mouseRef.current.x, mouseRef.current.y, speed * 0.3)
@@ -75,17 +74,17 @@ export function CursorTrail() {
 
         ctx.beginPath();
         ctx.arc(particle.x, particle.y, size, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(4, 191, 138, ${alpha})`;
+        ctx.fillStyle = `rgba(255, 102, 0, ${alpha})`; // Directly using rgba for orange color
         ctx.fill();
 
         return particle.life > 0;
       });
 
       prevMouseRef.current = { ...mouseRef.current };
+      requestAnimationFrame(animate); // Smooth animation with requestAnimationFrame
     };
 
-
-    const animationInterval = setInterval(animate, 1000 / 24); 
+    animate(); // Start animation loop
 
     const handleMouseMove = (e: MouseEvent) => {
       const rect = canvas.getBoundingClientRect();
@@ -100,15 +99,13 @@ export function CursorTrail() {
     return () => {
       window.removeEventListener('resize', updateCanvasSize);
       window.removeEventListener('mousemove', handleMouseMove);
-      clearInterval(animationInterval);
     };
   }, []);
 
   return (
     <canvas
       ref={canvasRef}
-      className="fixed inset-0 pointer-events-none z-50"
-      style={{ mixBlendMode: 'screen' }}
+      className="fixed inset-0 pointer-events-none z-[100]" // Set higher z-index
     />
   );
 }

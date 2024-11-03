@@ -51,7 +51,7 @@ const CountryFlag = ({ countryCode }: { countryCode: string }) => {
   return Flag ? (
     <Flag className="w-4 h-4 rounded-sm shadow-sm" title={countryCode} />
   ) : (
-    <span className="text-xs text-gray-500">{countryCode}</span>
+    <span className="text-sm text-[hsl(var(--muted-foreground))]">{countryCode}</span>
   );
 };
 
@@ -79,15 +79,15 @@ export function Reviews() {
   ];
 
   return (
-    <section id="reviews" className="relative py-20 px-4 section-gradient z-[-1}">
+    <section id="reviews" className="relative py-20 px-4 bg-[hsl(var(--background))] section-gradient z-[-1}">
       <div className="relative max-w-7xl mx-auto z-[-1}">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-inter glow-effect mb-4">
+          <h2 className="text-3xl md:text-4xl font-inter text-[hsl(var(--foreground))] glow-effect mb-4">
             Trusted by Users Worldwide
           </h2>
           <a 
             href="https://www.trustpilot.com/review/torbox.app"
-            className="text-[#04bf8a] hover:text-[#04bf8a]/80 inline-flex items-center transition-colors"
+            className="text-[hsl(var(--highlight))] hover:text-[hsl(var(--highlight))]/80 inline-flex items-center transition-colors"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -104,29 +104,29 @@ export function Reviews() {
           {displayedReviews.map((review, index) => (
             <div 
               key={`${review.author}-${index}`}
-              className="bg-[#0d0f13] rounded-lg border border-[#04bf8a]/10 p-6 transition-all duration-300 card-hover-glow relative hover:shadow-[#04bf8a]/20 hover:shadow-lg"
+              className="bg-[hsl(var(--card))] rounded-lg border border-[hsl(var(--highlight))]/10 p-6 transition-all duration-300 card-hover-glow relative hover:shadow-[hsl(var(--highlight))]/20 hover:shadow-lg"
             >
               <div className="flex mb-4">
                 {[...Array(5)].map((_, i) => (
                   <Star 
                     key={i} 
-                    className="h-5 w-5 text-[#04bf8a] fill-[#04bf8a]"
-                    style={{ filter: 'drop-shadow(0 0 2px rgba(4, 191, 138, 0.3))' }}
+                    className="h-5 w-5 text-[hsl(var(--highlight))] fill-[hsl(var(--highlight))]"
+                    style={{ filter: 'drop-shadow(0 0 2px hsla(var(--highlight), 0.3))' }}
                   />
                 ))}
               </div>
-              <p className="text-gray-400 mb-4 line-clamp-4">
+              <p className="text-[hsl(var(--background))] mb-4 line-clamp-4">
                 {review.text}
               </p>
               <div className="flex justify-between items-center mt-auto">
                 <div>
-                  <p className="font-inter text-[#04bf8a]">{review.author}</p>
+                  <p className="font-inter text-[hsl(var(--highlight))]">{review.author}</p>
                   <div className="flex items-center gap-2 mt-1">
                     <CountryFlag countryCode={review.location} />
-                    <span className="text-sm text-gray-500">{review.location}</span>
+                    <span className="text-sm text-[hsl(var(--muted-foreground))]">{review.location}</span>
                   </div>
                 </div>
-                <span className="text-sm text-gray-500">{review.date}</span>
+                <span className="text-sm text-[hsl(var(--muted-foreground))]">{review.date}</span>
               </div>
             </div>
           ))}

@@ -6,34 +6,35 @@ import { cn } from '@/lib/utils';
 
 const faqs = [
   {
-    question: 'What makes TorBox stand out among torrenting tools?',
-    answer: 'TorBox is more than just a traditional torrent hosting service; it’s a fully integrated download platform. By providing affordability, speed, and ease of use, it eliminates the need for manual configuration of VPNs, clients, and automation tools. The user interface is designed for quick access and control, backed by a dedicated community. Simply upload your torrent and let TorBox handle the rest, delivering files to any device. With continuous updates and integrations, TorBox serves as a complete torrent privacy tool for all your downloading needs.'
+    question: 'Why choose TorBox for 1fichier downloads?',
+    answer: 'TorBox provides an efficient solution for 1fichier downloads, offering seamless integration with high-speed torrenting and debrid services. Unlike other platforms, TorBox eliminates the need for manual VPN or client configurations, allowing users to download files from 1fichier and other sources easily. Our interface is designed for quick control, backed by a dedicated community. Simply upload your torrent, and TorBox will manage the rest, making it ideal for users seeking fast and private downloads.'
   },
   {
-    question: 'Is there any catch to the free plan?',
-    answer: 'No catch. The free plan is truly cost-free, with no hidden charges or payment information required. You can use it as long as you like, with a few restrictions compared to our premium plans. The free plan still provides robust features, making it ideal for exploring the platform. Our mission is to encourage the use of peer-to-peer networks and support torrent cloud storage technologies for everyone.'
+    question: 'Does the free plan have any limitations?',
+    answer: 'TorBox’s free plan is completely cost-free and does not require any payment information. It includes powerful features for secure 1fichier downloads and alternative services, though premium plans provide additional functionality. The free plan is perfect for users exploring torrent cloud storage and debrid services without any hidden fees, making TorBox accessible to everyone.'
   },
   {
-    question: 'How does TorBox prioritize privacy and data security?',
-    answer: 'At TorBox, we prioritize user privacy with a strict no-logs policy and strong encryption protocols. We don’t store IP addresses, download details, or any personal data, and all connections are securely routed through our servers using SSL and HTTPS. This ensures your torrenting activities remain completely anonymous, even from your ISP. Join our community to learn more about our privacy features, or visit our support resources for additional information on our torrent privacy tool.'
+    question: 'How does TorBox protect my privacy with 1fichier and debrid downloads?',
+    answer: 'At TorBox, user privacy is paramount. We implement a strict no-logs policy and strong encryption to protect your data. With TorBox, no IP addresses, download logs, or personal information are stored, and all traffic is encrypted through SSL. This keeps your activity with 1fichier, torrents, and other downloads anonymous, even from your ISP. Visit our community forums for additional information on our privacy protocols.'
   },
   {
-    question: 'Can TorBox be used for anonymous torrenting?',
-    answer: 'Yes, TorBox is designed specifically for anonymous and private downloading. We don’t retain IP addresses, torrent metadata, or any other identifiers after you delete your download. The platform gives you complete control over your data, including the ability to erase your account entirely, leaving no trace behind. This makes TorBox the ideal choice for secure and private torrent cloud storage.'
+    question: 'Can TorBox be used for anonymous torrenting and 1fichier downloads?',
+    answer: 'Absolutely. TorBox is designed to support anonymous downloads, including those from 1fichier and similar services. We do not retain IP addresses, metadata, or other identifiers once your downloads are deleted. Additionally, users can delete their account and all associated data, ensuring total privacy. TorBox provides secure and anonymous cloud storage for users who value privacy in torrenting.'
   },
   {
-    question: 'Is TorBox accessible on mobile and other devices?',
-    answer: 'Yes, TorBox is built to be cross-device accessible. It works on any web browser, with a dedicated Android app available and an iOS app in development. We also offer WebDAV support for seamless file access across devices, making it easy to manage and retrieve your downloads from any location. The platform functions as an easy-to-use torrent platform for mobile users and desktop users alike.'
+    question: 'Is TorBox compatible with mobile devices?',
+    answer: 'Yes, TorBox is optimized for cross-device use. You can access TorBox from any browser, with a dedicated Android app available and an iOS version in development. WebDAV support allows you to access your files seamlessly across platforms, making it a versatile option for users seeking mobile 1fichier and torrent download solutions.'
   },
   {
-    question: 'Are frequently downloaded torrents cached for quicker access?',
-    answer: 'Yes, popular torrents are cached in our system for near-instant availability. If a torrent is not yet cached, it will be added to our high-speed file access system upon your first download, allowing other users to benefit from rapid download speeds. This approach makes TorBox an efficient alternative to seedbox solutions for users seeking fast download platforms.'
+    question: 'Are frequently downloaded torrents cached for faster access on TorBox?',
+    answer: 'Yes, TorBox caches popular files for rapid download speeds. If a 1fichier or other torrent file is not yet cached, it will be added upon first download, benefiting other users with near-instant access. This caching system makes TorBox an efficient alternative to traditional seedbox and debrid solutions, ensuring high-speed access to frequently downloaded content.'
   },
   {
-    question: 'What advantages does TorBox have over traditional seedboxes?',
-    answer: 'Unlike traditional seedboxes that require manual configuration and additional costs for add-ons like *Arr apps or media servers, TorBox is a pre-configured service offering optimized settings out-of-the-box. Our plans are competitively priced, with faster speeds and features designed to simplify the torrenting experience. Whether you are a beginner or a seasoned user, TorBox provides an alternative to seedbox services that delivers higher value and greater convenience.'
+    question: 'What makes TorBox a better choice than traditional seedboxes?',
+    answer: 'Unlike traditional seedboxes that require setup and extra costs for tools like *Arr apps or media servers, TorBox is a pre-configured platform with optimized settings. Our competitively priced plans provide faster speeds and simplified torrenting, making it easy for both new and experienced users. TorBox offers more value and convenience compared to typical seedbox services, particularly for 1fichier and debrid download needs.'
   }
 ];
+
 
 interface AccordionItemProps {
   question: string;
@@ -49,15 +50,15 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
   onClick,
 }) => {
   return (
-    <div className="bg-[#0d0f13] rounded-lg border border-[#04bf8a]/10 transition-all duration-300 card-hover-glow overflow-hidden">
+    <div className="bg-[hsl(var(--card))] rounded-lg border border-[hsl(var(--ring))]/20 transition-all duration-300 card-hover-glow overflow-hidden">
       <button
-        className="w-full px-6 py-4 flex justify-between items-center text-left hover:bg-[#0d0f13]/80 transition-colors focus:outline-none focus-visible:outline-none focus:ring-0"
+        className="w-full px-6 py-4 flex justify-between items-center text-left hover:bg-[hsl(var(--card))]/80 transition-colors focus:outline-none focus-visible:outline-none"
         onClick={onClick}
       >
-        <h3 className="text-lg sm:text-xl font-inter">{question}</h3>
+        <h3 className="text-lg sm:text-xl font-inter text-[hsl(var(--highlight))]">{question}</h3>
         <ChevronDown
           className={cn(
-            "w-5 h-5 text-[#04bf8a] transition-transform duration-300",
+            "w-5 h-5 text-[hsl(var(--highlight))] transition-transform duration-300",
             isOpen ? "rotate-180" : ""
           )}
         />
@@ -70,7 +71,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
       >
         <div className="overflow-hidden">
           <div className="px-6 pb-4">
-            <p className="text-gray-400 leading-relaxed">{answer}</p>
+            <p className="text-[hsl(var(--background))]/90 leading-relaxed">{answer}</p>
           </div>
         </div>
       </div>
@@ -82,9 +83,9 @@ export function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section id="faq" className="relative py-24">
+    <section id="faq" className="relative py-24 bg-[hsl(var(--background))]">
       <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-inter text-center mb-12 glow-effect">
+        <h2 className="text-3xl font-inter text-center mb-12 glow-effect text-[hsl(var(--foreground))]">
           Frequently Asked Questions
         </h2>
         <div className="space-y-4">

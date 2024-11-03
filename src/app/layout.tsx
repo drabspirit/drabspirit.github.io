@@ -4,17 +4,13 @@ import { Footer } from '@/components/Footer';
 import '@/styles/globals.css';
 
 export const metadata: Metadata = {
-  title: 'TorBox - High-Speed Torrent Downloader',
-  description: 'The ultimate private, secure torrent downloader with advanced debrid seedbox services.',
-  keywords: ['torrent downloader', 'seedbox', 'debrid', 'torrent client', 'cloud torrent'],
-  metadataBase: new URL('https://torbox.app'),
-  openGraph: {
-    title: 'TorBox - High-Speed Torrent Downloader',
-    description: 'Fast, secure, and private torrent downloading with advanced seedbox services.',
-    type: 'website',
-    locale: 'en_US',
-    url: 'https://torbox.app',
-  }
+  title: 'Free 1fichier Download & Alternatives - TorBox',
+  description: 'Experience high-speed 1fichier downloads and alternatives with TorBox, offering secure torrent downloads and advanced debrid seedbox services.',
+  keywords: [
+    '1fichier', '1fichier com', '1fichier dl', 'free 1fichier download', '1fichier alternative', 
+    '1fichier dl free', '1fichier alternatives for download', 'TorBox downloader'
+  ],
+  metadataBase: new URL('https://torbox.app')
 };
 
 export default function RootLayout({
@@ -25,9 +21,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" title="TorBox Icon" />
       </head>
-      <body className="min-h-screen bg-[#12141b] text-gray-100">
+      <body className="min-h-screen bg-[hsl(var(--background))] text-[hsl(var(--foreground))]">
         <Navbar />
         <main>{children}</main>
         <Footer />
